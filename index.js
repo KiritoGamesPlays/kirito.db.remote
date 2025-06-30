@@ -18,27 +18,29 @@ class KiritoDB {
   //Métodos da class do KiritoDB
 
   async add(rota, valor) {
-    try {
-      if (!rota) {
-        throw new Error("Você Deve Informar a Rota De Onde Será Salvo. Exemplo: 2030.carteira");
-      }
-      if (!valor) {
-        throw new Error("Você Deve Informar O Valor Que Será Salvo");
-      }
-
-      const api = await axios.get(`${Urlbase}/api/v1/db/add?id=${this.requiredString}&rota=${rota}&valor=${valor}`, {
-        headers: {
-          id: `${this.requiredString}`,
-          rota: `${rota}`,
-          valor: `${valor}`
-        }
-      });
-
-      return api.data;
-    } catch (error) {
-      throw new Error("Erro: " + error.message);
+  try {
+    if (!rota) {
+      throw new Error("Você Deve Informar a Rota De Onde Será Salvo. Exemplo: 2030.carteira");
     }
+
+    if (!valor || isNaN(valor) || !isFinite(valor)) {
+      throw new Error("Você Deve Informar Um Valor Numérico Válido");
+    }
+
+    const api = await axios.get(`${Urlbase}/api/v1/db/add?id=${this.requiredString}&rota=${rota}&valor=${valor}`, {
+      headers: {
+        id: `${this.requiredString}`,
+        rota: `${rota}`,
+        valor: `${valor}`
+      }
+    });
+
+    return api.data;
+  } catch (error) {
+    throw new Error("Erro: " + error.message);
   }
+}
+
 
   async get(rota) {
     try {
