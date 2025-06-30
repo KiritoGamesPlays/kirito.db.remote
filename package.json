@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KiritoGamesPlays/kiritoDb.git"
+    "url": "git+https://github.com/KiritoGamesPlays/kirito.db.remote.git"
   },
   "bugs": {
-    "url": "https://github.com/KiritoGamesPlays/kiritoDb/issues"
+    "url": "https://github.com/KiritoGamesPlays/kirito.db.remote/issues"
   },
-  "homepage": "https://github.com/KiritoGamesPlays/kiritoDb#readme"
+  "homepage": "https://github.com/KiritoGamesPlays/kirito.db.remote#readme"
 }
