@@ -1,6 +1,6 @@
 client = require("./index");
 client.config = require("./config");
-const Urlbase = "https://proxy-apis-geral.vercel.app/kiritodb"
+const Urlbase = "https://npm-db-kiritodb.ecoguardiao.tech"
 
 // Script by CroneGamesPlays Developer, NeoKurai Studios $ Ads s Group Corporation © 2020 - 2024 × Todos os direitos reservados.
 
@@ -10,7 +10,7 @@ const axios = require('axios');
 class KiritoDB {
   constructor(requiredString) {
     if (!requiredString) {
-      throw new Error("String obrigatória não informada durante a inicialização.");
+      throw new Error("Você deve informar uma key para poder proteger seus dados.");
     }
     this.requiredString = requiredString; // Armazena a string para uso posterior se necessário
   }
