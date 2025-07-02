@@ -1,6 +1,6 @@
 client = require("./index");
 client.config = require("./config");
-const Urlbase = "https://kiritodb-vercel.vercel.app"
+const Urlbase = "https://proxy-apis-geral.vercel.app/kiritodb"
 
 // Script by CroneGamesPlays Developer, NeoKurai Studios $ Ads s Group Corporation © 2020 - 2024 × Todos os direitos reservados.
 
