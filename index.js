@@ -2,7 +2,7 @@ client = require("./index");
 client.config = require("./config");
 const Urlbase = "https://npm-db-kiritodb.ecoguardiao.tech"
 
-// Script by CroneGamesPlays Developer, NeoKurai Studios $ Ads s Group Corporation © 2020 - 2024 × Todos os direitos reservados.
+// Script by CroneGamesPlays Developer, NeoKurai Studios, ADS Sousa Group Corporation © 2020 - 2025 × Todos os direitos reservados.
 
 const axios = require('axios');
 //const fetch = require("node-fetch");
